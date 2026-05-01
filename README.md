@@ -83,19 +83,14 @@ Copper losses dominate at low speed and high torque because of the high stator c
 The light-load region gives high conversion efficiency, but the absolute recovered power is small. The practical sweet spot for energy recovery is therefore the moderate-torque region between approximately −80 and −130 Nm, where whole-rig efficiency remains high and recovered power is large.
 
 ## How to run
-Open MATLAB R2025b.
-Clone or download this repository.
-Set the repository root folder as the MATLAB current folder.
-Run the parameter initialisation script:
-simulink_init_params_CORRECTED
-To run the baseline verification case:
-Test_one
-To run a reduced smoke-test sweep:
-test_fast
-To run the full sweep:
-run_efficiency_sweep
-To regenerate the dissertation figures from the saved sweep results:
-Plot_efficiency_maps
+1. Open MATLAB R2025b.
+2. Clone or download this repository.
+3. Set the repository root folder as the MATLAB current folder.
+4. Run the parameter initialisation script: simulink_init_params_CORRECTED
+5. To run the baseline verification case: Test_one
+6. To run a reduced fast-test sweep: test_fast
+7. To run the full sweep: run_efficiency_sweep
+8. To regenerate the dissertation figures from the saved sweep results: Plot_efficiency_maps
 
 The full sweep contains 323 Simulink runs and may take a substantial amount of time depending on hardware. The saved result file is included so that the main plots can be regenerated without rerunning the complete sweep.
 
@@ -122,14 +117,14 @@ The per-stage power-balance check confirms that the explicit loss channels accou
 
 The main dissertation figures generated from the sweep include:
 
-Top-line efficiency maps: eta_regen, eta_rig, and eta_b2b
-Section-by-section efficiency maps
-Battery B stored power map
-Dump-resistor power map
-Whole-rig power-balance residual map
-Stacked loss breakdown at the best eta_rig point per speed
-Iron-equals-copper crossover plot
-Best-efficiency operating loci
+1. Top-line efficiency maps: eta_regen, eta_rig, and eta_b2b
+2. Section-by-section efficiency maps
+3. Battery B stored power map
+4. Dump-resistor power map
+5. Whole-rig power-balance residual map
+6. Stacked loss breakdown at the best eta_rig point per speed
+7. Iron-equals-copper crossover plot
+8. Best-efficiency operating loci
 
 If the corresponding images are uploaded to the figures/ folder, they can be linked here using standard Markdown image links.
 
@@ -144,13 +139,13 @@ Simulink R2025b
 
 This project is a simulation and benchmarking study rather than a physically validated experimental test programme. The main limitations are:
 
-no direct experimental validation against an instrumented rig;
-representative inverter switching and conduction loss parameters;
-representative Steinmetz iron-loss coefficients;
-fixed DC/DC converter efficiency rather than a load-dependent efficiency map;
-simplified battery model using fixed internal resistance;
-simplified field-weakening representation;
-steady-state operating points rather than complete road-vehicle braking events.
+1. no direct experimental validation against an instrumented rig;
+2. representative inverter switching and conduction loss parameters;
+3. representative Steinmetz iron-loss coefficients;
+4. fixed DC/DC converter efficiency rather than a load-dependent efficiency map;
+5. simplified battery model using fixed internal resistance;
+6. simplified field-weakening representation;
+7. steady-state operating points rather than complete road-vehicle braking events.
 
 ## Author
 
