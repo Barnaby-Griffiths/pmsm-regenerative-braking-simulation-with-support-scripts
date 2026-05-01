@@ -155,6 +155,6 @@ steady-state operating points rather than complete road-vehicle braking events.
 ## Author
 
 Barnaby Griffiths
-BEng Mechanical Engineering with Automotive
+BEng Mechanical Engineering
 University of Southampton
 2026
